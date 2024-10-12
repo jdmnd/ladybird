@@ -82,7 +82,7 @@ public:
     {
     }
 
-    ~SkiaVulkanBackendContext() override {};
+    ~SkiaVulkanBackendContext() override { }
 
     void flush_and_submit() override
     {
@@ -150,7 +150,7 @@ public:
     {
     }
 
-    ~SkiaMetalBackendContext() override {};
+    ~SkiaMetalBackendContext() override { }
 
     sk_sp<SkSurface> wrap_metal_texture(Core::MetalTexture& metal_texture)
     {

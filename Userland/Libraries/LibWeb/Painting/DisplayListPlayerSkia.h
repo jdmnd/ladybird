@@ -25,10 +25,10 @@ class SkiaBackendContext {
     AK_MAKE_NONMOVABLE(SkiaBackendContext);
 
 public:
-    SkiaBackendContext() {};
-    virtual ~SkiaBackendContext() {};
+    SkiaBackendContext() { }
+    virtual ~SkiaBackendContext() { }
 
-    virtual void flush_and_submit() {};
+    virtual void flush_and_submit() { }
 };
 
 class DisplayListPlayerSkia : public DisplayListPlayer {

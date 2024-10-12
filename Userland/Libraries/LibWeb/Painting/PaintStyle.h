@@ -51,7 +51,7 @@ public:
 
     float scale() const { return m_scale; }
 
-    virtual ~SVGGradientPaintStyle() {};
+    virtual ~SVGGradientPaintStyle() { }
 
 protected:
     Vector<ColorStop, 4> m_color_stops;

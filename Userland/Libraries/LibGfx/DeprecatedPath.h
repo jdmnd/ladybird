@@ -62,7 +62,9 @@ public:
 
     DeprecatedPathSegment(Command command, ReadonlySpan<FloatPoint> points)
         : m_command(command)
-        , m_points(points) {};
+        , m_points(points)
+    {
+    }
 
 private:
     Command m_command;

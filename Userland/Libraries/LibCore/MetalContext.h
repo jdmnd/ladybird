@@ -21,7 +21,7 @@ public:
     virtual size_t width() const = 0;
     virtual size_t height() const = 0;
 
-    virtual ~MetalTexture() {};
+    virtual ~MetalTexture() { }
 };
 
 class MetalContext {
@@ -31,7 +31,7 @@ public:
 
     virtual OwnPtr<MetalTexture> create_texture_from_iosurface(IOSurfaceHandle const&) = 0;
 
-    virtual ~MetalContext() {};
+    virtual ~MetalContext() { }
 };
 
 OwnPtr<MetalContext> get_metal_context();
